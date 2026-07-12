@@ -54,22 +54,26 @@ export default function CheckIn() {
       </div>
 
       <Card>
-        {/* Mock geofence visual */}
+        {/* Mock geofence visual: the ring stays empty; the caption lives below it. */}
         <div className="relative flex h-44 items-center justify-center overflow-hidden rounded-xl bg-ink-100">
           <div
             className={cx(
-              'flex h-28 w-28 items-center justify-center rounded-full border-2 border-dashed',
+              'h-24 w-24 rounded-full border-2 border-dashed',
               onSite ? 'border-brand-500 bg-brand-50' : 'border-ink-300',
             )}
+          />
+          <span
+            className={cx(
+              'absolute inset-x-0 bottom-3 text-center text-xs font-medium',
+              onSite ? 'text-brand-700' : 'text-ink-500',
+            )}
           >
-            <span className="text-xs font-medium text-ink-400">
-              {onSite ? t('checkin.inside') : data.opportunity.locationLabel}
-            </span>
-          </div>
+            {onSite ? t('checkin.inside') : data.opportunity.locationLabel}
+          </span>
           <div
             className={cx(
               'absolute h-4 w-4 rounded-full border-2 border-white shadow transition-all duration-500',
-              onSite ? 'left-1/2 top-1/2 -ml-2 -mt-2 bg-brand-600' : 'bottom-4 right-6 bg-ink-400',
+              onSite ? 'left-1/2 top-1/2 -ml-2 -mt-2 bg-brand-600' : 'right-6 top-4 bg-ink-400',
             )}
           />
         </div>

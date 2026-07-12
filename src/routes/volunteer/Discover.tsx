@@ -22,10 +22,10 @@ export default function Discover() {
             key={c}
             onClick={() => setCategory(c)}
             className={cx(
-              'rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors',
+              'rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors',
               category === c
-                ? 'bg-brand-600 text-white'
-                : 'bg-ink-100 text-ink-600 hover:bg-ink-200',
+                ? 'border-brand-600 bg-brand-600 text-white'
+                : 'border-ink-200 bg-white text-ink-600 hover:bg-ink-50',
             )}
           >
             {c === 'all' ? t('discover.filterAll') : t(`cause.${c}`)}
