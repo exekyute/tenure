@@ -3,6 +3,8 @@
 A volunteer platform prototype built around one idea: verified, sustained service should earn something real. Volunteers earn non-cash **learning credits** from verified shifts and spend them on mentorship, skill workshops, and career access. Organizations get a contained environment to manage the volunteers they bring in. Mentors offer the sessions those credits redeem.
 
 > Working name. Bilingual (English and French), Canada-first. This repository is **R0**, a clickable front-end-only prototype with sample data. It proves the full reward loop before any backend exists.
+>
+> All the sample data in this repo is made up. Every organization, volunteer, mentor, and shift is fictional. There is no real charity, real person, or real service anywhere.
 
 ![The reward loop: check in, get signed off, earn a Verified Service Record, spend vested credits](docs/demo/tenure-demo.gif)
 
