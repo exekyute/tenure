@@ -24,7 +24,7 @@ export default function MentorWorkspace() {
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-500">{tb(data.profile.bio)}</p>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <Stat label={t('mentor.delivered')} value={data.profile.sessionsDelivered} />
         <Stat label={t('mentor.offers')} value={data.offers.length} />
         <Stat label={t('mentor.incoming')} value={data.incoming.length} />
@@ -32,7 +32,7 @@ export default function MentorWorkspace() {
 
       <div>
         <SectionTitle title={t('mentor.offers')} />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {data.offers.map((o) => (
             <Card key={o.id}>
               <div className="flex items-start justify-between gap-2">

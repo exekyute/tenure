@@ -20,7 +20,7 @@ export default function Credits() {
     <div className="space-y-6">
       <SectionTitle title={t('credits.title')} subtitle={t('credits.sub')} />
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <Stat label={t('common.available')} value={data.available} />
         <Stat label={t('common.escrow')} value={data.escrow} />
         <Stat label={t('common.spent')} value={data.spent} />
@@ -33,7 +33,7 @@ export default function Credits() {
       {/* Catalog */}
       <div>
         <SectionTitle title={t('credits.catalog')} />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {data.offers.map((o) => {
             const affordable = data.available >= o.creditCost
             const disabled = o.locked || !affordable
@@ -95,7 +95,7 @@ export default function Credits() {
         <SectionTitle title={t('credits.ledger')} />
         <Card flush className="divide-y divide-ink-100">
           {data.ledger.map((l) => (
-            <div key={l.id} className="flex items-center justify-between px-5 py-3">
+            <div key={l.id} className="flex items-center justify-between px-6 py-3.5">
               <div>
                 <div className="text-sm font-medium text-ink-800">{tb(l.label)}</div>
                 <div className="mt-0.5 text-xs text-ink-500">

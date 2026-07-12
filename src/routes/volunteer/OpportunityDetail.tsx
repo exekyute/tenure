@@ -21,7 +21,7 @@ export default function OpportunityDetail() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <Link to="/volunteer/discover" className="text-sm text-ink-500 hover:text-ink-800">
         &larr; {t('common.back')}
       </Link>
@@ -34,7 +34,7 @@ export default function OpportunityDetail() {
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">{tb(data.opportunity.title)}</h1>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-3">
         <Card className="md:col-span-2">
           <h2 className="font-semibold">{t('opp.about')}</h2>
           <p className="mt-2 text-sm leading-relaxed text-ink-600">

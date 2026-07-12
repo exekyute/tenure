@@ -13,16 +13,16 @@ export default function Discover() {
   const { data, loading, error } = useAsync(() => api.listOpportunities({ category }), [category])
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <SectionTitle title={t('discover.title')} subtitle={t('discover.sub')} />
 
-      <div className="flex flex-wrap gap-1.5">
+      <div className="flex flex-wrap gap-2">
         {CATEGORIES.map((c) => (
           <button
             key={c}
             onClick={() => setCategory(c)}
             className={cx(
-              'rounded-full px-3 py-1 text-xs font-medium transition-colors',
+              'rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors',
               category === c
                 ? 'bg-brand-600 text-white'
                 : 'bg-ink-100 text-ink-600 hover:bg-ink-200',
@@ -38,7 +38,7 @@ export default function Discover() {
       ) : !data || data.length === 0 ? (
         error ? <LoadState error={error} /> : <EmptyState>{t('discover.noShifts')}</EmptyState>
       ) : (
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {data.map((card) => (
             <Card key={card.opportunity.id}>
               <div className="flex items-start justify-between gap-2">

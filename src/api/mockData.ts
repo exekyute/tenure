@@ -80,10 +80,10 @@ export function buildInitialState(): PlatformState {
   const orgs: Org[] = [
     {
       id: 'org_shelter',
-      name: 'Shelter Movers Halifax',
+      name: 'Haven Movers Co-op',
       blurb: {
-        en: 'We move people fleeing abuse to safety, at no cost, with volunteer crews.',
-        fr: 'Nous déplaçons gratuitement les personnes fuyant la violence vers un lieu sûr, avec des équipes bénévoles.',
+        en: 'We help families leaving unsafe homes move to safety, at no cost, with volunteer crews.',
+        fr: 'Nous aidons gratuitement les familles quittant un foyer dangereux à déménager en sécurité, avec des équipes bénévoles.',
       },
       mintCapPerMonth: 600,
       mintedThisMonth: 184,
@@ -91,7 +91,7 @@ export function buildInitialState(): PlatformState {
     },
     {
       id: 'org_food',
-      name: 'Feed Nova Scotia',
+      name: 'Harbourview Food Network',
       blurb: {
         en: 'A provincial food bank network sorting and distributing donated food.',
         fr: 'Un réseau provincial de banques alimentaires qui trie et distribue les dons.',
@@ -102,7 +102,7 @@ export function buildInitialState(): PlatformState {
     },
     {
       id: 'org_youth',
-      name: 'Big Brothers Big Sisters',
+      name: 'Bright Futures Youth Society',
       blurb: {
         en: 'Mentoring relationships for young people who need a steady adult.',
         fr: 'Des relations de mentorat pour les jeunes qui ont besoin d\'un adulte fiable.',
@@ -176,7 +176,7 @@ export function buildInitialState(): PlatformState {
     },
   ]
 
-  // Maya's history at Shelter Movers: 3 approved shifts across 3 distinct weeks,
+  // Maya's history at Haven Movers: 3 approved shifts across 3 distinct weeks,
   // plus one upcoming shift that, once verified, crosses the Tier 2 + vesting threshold.
   const shifts: Shift[] = [
     {

@@ -35,14 +35,14 @@ export default function VolunteerHome() {
         <p className="mt-1 text-ink-500">{t('home.sub')}</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat label={t('home.available')} value={data.creditsAvailable} />
         <Stat label={t('home.escrow')} value={data.creditsEscrow} />
         <Stat label={t('home.attendance')} value={data.attendanceHours} />
         <Stat label={t('home.records')} value={data.verifiedRecords} />
       </div>
 
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-2">
         <Card>
           <div className="flex items-center justify-between">
             <h2 className="font-semibold">{t('home.integrity')}</h2>
@@ -79,7 +79,7 @@ export default function VolunteerHome() {
                 {data.nextShift.shift.date} · {data.nextShift.shift.startTime}-
                 {data.nextShift.shift.endTime}
               </p>
-              <div className="mt-4 flex gap-2">
+              <div className="mt-5 flex gap-2.5">
                 <LinkButton size="sm" to={`/volunteer/checkin/${data.nextShift.registrationId}`}>
                   {t('home.goCheckIn')}
                 </LinkButton>

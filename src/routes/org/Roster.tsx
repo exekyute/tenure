@@ -10,7 +10,7 @@ export default function Roster() {
   if (loading || !data) return <LoadState error={error} />
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <SectionTitle title={t('org.rosterTitle')} subtitle={t('org.rosterSub')} />
 
       {data.length === 0 ? (

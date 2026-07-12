@@ -31,7 +31,7 @@ export default function Reports() {
   }
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <SectionTitle
         title={t('org.reportsTitle')}
         subtitle={t('org.reportsSub')}
@@ -45,19 +45,19 @@ export default function Reports() {
         <table className="w-full min-w-[26rem] text-sm">
           <thead>
             <tr className="border-b border-ink-100 text-left text-xs uppercase tracking-wide text-ink-400">
-              <th className="px-5 py-3 font-medium">{t('org.colVol')}</th>
-              <th className="px-5 py-3 text-right font-medium">{t('org.colShifts')}</th>
-              <th className="px-5 py-3 text-right font-medium">{t('org.colHours')}</th>
-              <th className="px-5 py-3 text-right font-medium">{t('org.colTier')}</th>
+              <th className="px-6 py-3.5 font-medium">{t('org.colVol')}</th>
+              <th className="px-6 py-3.5 text-right font-medium">{t('org.colShifts')}</th>
+              <th className="px-6 py-3.5 text-right font-medium">{t('org.colHours')}</th>
+              <th className="px-6 py-3.5 text-right font-medium">{t('org.colTier')}</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-ink-100">
             {data.map((r) => (
               <tr key={r.account.id}>
-                <td className="px-5 py-3 font-medium text-ink-800">{r.account.name}</td>
-                <td className="px-5 py-3 text-right text-ink-600">{r.approvedShifts}</td>
-                <td className="px-5 py-3 text-right text-ink-600">{r.totalHours}</td>
-                <td className="px-5 py-3 text-right">
+                <td className="px-6 py-3.5 font-medium text-ink-800">{r.account.name}</td>
+                <td className="px-6 py-3.5 text-right text-ink-600">{r.approvedShifts}</td>
+                <td className="px-6 py-3.5 text-right text-ink-600">{r.totalHours}</td>
+                <td className="px-6 py-3.5 text-right">
                   <TierBadge tier={r.tier} />
                 </td>
               </tr>

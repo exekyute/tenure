@@ -41,7 +41,7 @@ export default function Passport() {
       {/* Tier 2: Verified Service Records, earned */}
       <div>
         <SectionTitle title={t('passport.verifiedTitle')} />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-5 md:grid-cols-2">
           {data.relationships.map((r) => (
             <Card key={r.orgId}>
               <div className="flex items-start justify-between gap-2">

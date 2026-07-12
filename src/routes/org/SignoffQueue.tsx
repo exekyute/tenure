@@ -12,7 +12,7 @@ export default function SignoffQueue() {
   if (loading || !data) return <LoadState error={error} />
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       <SectionTitle title={t('org.signoffTitle')} subtitle={t('org.signoffSub')} />
       {data.length === 0 ? (
         <EmptyState>{t('org.queueEmpty')}</EmptyState>
@@ -74,7 +74,7 @@ function SignoffCard({ item }: { item: SignoffItem }) {
         </div>
       </div>
 
-      <div className="mt-4 space-y-3 border-t border-ink-100 pt-4">
+      <div className="mt-5 space-y-3.5 border-t border-ink-100 pt-5">
         <div className="flex gap-2">
           <button
             onClick={() => setMeaningful(true)}

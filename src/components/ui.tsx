@@ -27,7 +27,7 @@ export function Card({
     <div
       className={cx(
         'rounded-2xl border border-ink-200 bg-white shadow-card',
-        !flush && 'p-5',
+        !flush && 'p-6',
         className,
       )}
     >
@@ -46,7 +46,7 @@ export function SectionTitle({
   action?: ReactNode
 }) {
   return (
-    <div className="mb-4 flex items-start justify-between gap-4">
+    <div className="mb-5 flex items-start justify-between gap-4">
       <div>
         <h2 className="text-xl font-semibold tracking-tight text-ink-900">{title}</h2>
         {subtitle && <p className="mt-1 text-sm leading-relaxed text-ink-500">{subtitle}</p>}
@@ -128,9 +128,9 @@ export function TierBadge({ tier }: { tier: 1 | 2 }) {
 
 export function Stat({ label, value, hint }: { label: string; value: ReactNode; hint?: string }) {
   return (
-    <div className="rounded-xl border border-ink-200 bg-white p-4">
+    <div className="rounded-xl border border-ink-200 bg-white p-5">
       <div className="text-2xl font-semibold tracking-tight text-ink-900">{value}</div>
-      <div className="mt-0.5 text-sm text-ink-500">{label}</div>
+      <div className="mt-1 text-sm text-ink-500">{label}</div>
       {hint && <div className="mt-1 text-xs text-ink-400">{hint}</div>}
     </div>
   )
@@ -157,7 +157,7 @@ export function Avatar({ initials }: { initials: string }) {
 
 export function EmptyState({ children }: { children: ReactNode }) {
   return (
-    <div className="rounded-2xl border border-dashed border-ink-200 bg-ink-50 p-8 text-center text-sm text-ink-500">
+    <div className="rounded-2xl border border-dashed border-ink-200 bg-ink-50 p-10 text-center text-sm text-ink-500">
       {children}
     </div>
   )

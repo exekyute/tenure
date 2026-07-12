@@ -20,7 +20,7 @@ export default function OrgDashboard() {
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-500">{tb(data.org.blurb)}</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat label={t('org.activeVols')} value={data.activeVolunteers} />
         <Stat label={t('org.hours')} value={data.hoursLogged} />
         <Stat label={t('org.pending')} value={data.pendingSignoffs} />
@@ -48,7 +48,7 @@ export default function OrgDashboard() {
         </p>
       </Card>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2.5">
         <LinkButton to="/org/signoff">{t('nav.signoff')}</LinkButton>
         <LinkButton to="/org/roster" variant="secondary">
           {t('nav.roster')}

@@ -39,7 +39,7 @@ export default function CheckIn() {
   }
 
   return (
-    <div className="mx-auto max-w-xl space-y-5">
+    <div className="mx-auto max-w-xl space-y-6">
       <Link to="/volunteer" className="text-sm text-ink-500 hover:text-ink-800">
         &larr; {t('checkin.back')}
       </Link>

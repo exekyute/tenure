@@ -59,7 +59,7 @@ export default function ShiftBuilder() {
   const label = 'mb-1 block text-xs font-medium text-ink-500'
 
   return (
-    <div className="mx-auto max-w-xl space-y-5">
+    <div className="mx-auto max-w-xl space-y-6">
       <SectionTitle title={t('org.shiftsTitle')} subtitle={t('org.shiftsSub')} />
       <Card>
         <form onSubmit={submit} className="space-y-4">
@@ -142,7 +142,7 @@ export default function ShiftBuilder() {
           <SectionTitle title={t('org.upcoming')} />
           <Card flush className="divide-y divide-ink-100">
             {upcoming.map((s) => (
-              <div key={s.id} className="flex items-center justify-between gap-3 px-5 py-3">
+              <div key={s.id} className="flex items-center justify-between gap-3 px-6 py-3.5">
                 <div>
                   <div className="text-sm font-medium text-ink-800">{tb(s.opportunityTitle)}</div>
                   <div className="mt-0.5 text-xs text-ink-500">
